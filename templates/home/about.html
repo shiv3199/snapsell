@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock title %}
+{% block body %}
+  
+<section class="mt-10">
+    <div class="py-10">
+        <h1 class="text-center mb-3 mx-auto text-black text-3xl font-bold">About us</h1>
+        <div class="flex w-[84%] mx-auto">
+          <div class="">
+            <div class="my-4 flex">
+              <p><span class="font-semibold text-xl">Introduction</span><br>Welcome to our photo selling website! We are a team of passionate photographers dedicated to providing high-quality photos for personal and commercial use. Our mission is to showcase the beauty of the world through our lens and make it accessible to everyone. <br>We take pride in our attention to detail and our commitment to delivering exceptional photography. Our collection is carefully curated to ensure that every photo meets our high standards for quality and creativity. We work with photographers from around the world to bring you a diverse selection of images that are both beautif</p>
+              <img class="h-72 rounded-[80px]" src="/static/images/about1.jpg" alt="img">
+            </div>
+            <hr>
+            <div class="my-4 flex space-x-3">
+              <img class="h-72 rounded-[80px]" src="/static/images/about2.jpg" alt="img">
+             <p><span class="font-semibold text-xl">Mission</span><br>We are committed to promoting diversity and inclusion in the photography industry by featuring the work of photographers from diverse backgrounds and perspectives. We strive to create a welcoming and supportive environment where photographers can feel empowered to share their work and buyers can discover new and exciting perspectives.<br>We are also committed to social responsibility and giving back to the community. We partner with charities and organizations that align with our values to support causes that are important to us and our community.</p>
+            </div>
+            <hr>
+            <div class="my-4 flex">
+              <ul>
+                <span class="font-semibold text-xl">Services</span>
+                <li class="list-disc"><span class="font-bold">High-quality photography:</span> We feature a collection of high-quality photos from talented photographers around the world. Our collection includes nature, landscapes, portraits, abstract art, and much more.</li>
+                <li class="list-disc"><span class="font-bold">Digital downloads:</span> We offer digital downloads of our photos for your personal and commercial use. You can easily download and use our photos for your projects without having to worry about copyrights.</li>
+                <li class="list-disc"><span class="font-bold">Licensing options:</span> We offer different licensing options to meet your specific needs, whether it's for personal use, commercial use, or editorial use.</li>
+              </ul>  
+              <img class="h-72 rounded-[80px]" src="/static/images/about3.jpg" alt="img">
+                      
+            </div>
+            <hr>
+            <div class="my-4">
+            <h1 class="font-semibold text-xl">Contact information</h1>
+            <p>We would love to hear from you! If you have any questions, feedback, or inquiries about our services, please don't hesitate to reach out to us. Here's our contact information:</p> 
+            <a href="{% url 'contact' %}">
+              <button class="my-8 px-10 border rounded bg-lime-600 text-lg font-medium hover:bg-black transition duration-500 ease-in-out hover:text-white">Contact</button>          
+            </a>
+            </div>
+          </div>
+          {% comment %} <div class="w-1/2 mx-1">
+            <img src="/static/images/photo2.jpg" alt="img">
+          </div> {% endcomment %}
+        </div>
+    </div>  
+  </section>
+  
+{% endblock body %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+<main>
+    <div class="w-full overflow-hidden relative">
+       <img class="inset-0 w-full h-[40.75rem] object-cover" src="/static/images/photo01.jpg" alt="main photo">
+       <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
+       <div class="flex flex-col w-[84%] mx-auto inset-0 h-full justify-center items-start absolute">
+        <h1 class="text-5xl font-bold leading-relaxed
+         tracking-wider text-white font">Serving you <br>since 2023.</h1>
+         <p class="text-white text-lg">SnapSell is photo selling website<br>which help photographer to<br>to sell photo</p>
+         <button class="mt-5 px-5 py-2 text-white border rounded hover:bg-white transition duration-500 ease-in-out hover:text-black text-lg font-semibold">Buy Photos</button>
+       </div>
+    </div>
+</main>
+<section>
+    <div class="flex w-[86%] mx-auto h-1/2 my-5 space-x-8">
+        <div class="w-1/2">
+            <img class="" src="static/images/3271470.jpg">
+        </div>
+        <div class="flex flex-col items-start justify-start w-1/2">
+            <h1 class="text-3xl text-black font-bold">Find Your Perfect Shot:</h1>
+            <h1 class="text-lg font-bold">A Wide Range of Stunning Photos Available on Our Photoselling Website</h1>
+            <p class="py-5">Welcome to our photoselling website, where you'll find a vast collection of high-quality photographs from talented photographers worldwide. Our platform provides a convenient way to browse and purchase stunning imagery for personal or commercial use. Our collection includes a wide range of themes, from nature and landscapes to people and lifestyle, ensuring there's something for everyone. We take pride in curating our collection with the utmost care and attention to detail, ensuring our customers receive the best possible quality. With easy browsing and a user-friendly interface, our website makes it simple to find the perfect photo for your needs. Whether you're an individual, a small business, or a large corporation, we offer affordable pricing and flexible licensing options to suit your budget and requirements. So why wait? Browse our collection today and discover the perfect photo for your next project!</p>
+            <button class="my-8 px-10 border rounded bg-lime-600 text-lg font-medium hover:bg-black transition duration-500 ease-in-out hover:text-lime-500">Browse</button>
+        </div>
+    </div>
+</section>
+{% endblock body %}
