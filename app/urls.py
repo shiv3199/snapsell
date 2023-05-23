@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from django.conf import settings
+from django.conf.urls.static import static
 
 admin.site.site_header = "Snapsell Admin"
 admin.site.site_title = "Snapsell Admin Portal"
@@ -25,4 +27,4 @@ urlpatterns = [
     path("__reload__/", include("django_browser_reload.urls")),
     path('',include('home.urls')),
     path('picture/',include('shop.urls')),
-]
+] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
